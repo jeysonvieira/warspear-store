@@ -1,4 +1,16 @@
-.viewport{
+.viewport {
     height: 100vh;
     width: 100vw;
+}
+
+
+.cardwidth {
+    width: 210px;
+}
+
+.bg-im {
+    width: 100%;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
