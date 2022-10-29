@@ -10,7 +10,8 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="cards.css">
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-icon-180x180.png">
@@ -29,7 +30,7 @@
       <header>
           <nav class="navbar navbar-expand-lg bg-danger">
               <div class="container">
-                <a class="navbar-brand" href="index.html"><b>Warspear Store</b></a>
+                <a class="navbar-brand" href="../index.html"><b>Warspear Store</b></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -72,20 +73,114 @@
 
       <main class="flex-fill">
 
-        <div class="container">
-
-          <h2 class="border-bottom mt-3 mb-4">Quem somos?</h2>
-
-
-          <p class="text-capitalize">
-            Warspear store foi criada no ano de 2022, no intuito de vendas/compras e trocas de itens/contas do jogo Warspear online, Fornecendo mais seguraça e praticidade para os compradores e colecionadores de contas e itens dentro desse jogo, Somos uma empresa totalmente brasileira, mas mantemos contato com todo o exterior, usando como moeda principal o dólar americano. Fundador e CEO responsável pela impresa: "Jeyson Vieira".
-          </p>
-
-
-
+        <div class="container text-center mb-3">
+          <h2>Alucard</h2>
         </div>
 
+        <div class="container text-center">
 
+          <ul class="nav nav-tabs nav-justified">
+
+            <li class="nav-item">
+              <a href="#pve" data-bs-toggle="tab" id="lipve" class="nav-link">PvE</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#pvp" data-bs-toggle="tab" id="lipvp" class="nav-link">PvP</a>
+            </li>
+
+          </ul>
+
+        
+
+          <div class="tab-content">
+
+            <div id="pve" class="tab-pane text-start">
+
+              <div class="d-flex d-row w-50 border-end">
+                <img class="" src="../imgs/imgs-chars/alucard/alucardpve.PNG" alt="" style="height:400px ;">
+                <div class="d-column">
+                  <div class=" ms-3 text-start description fw-bold mt-1 border-bottom">
+                    <p>
+                      Nick: Alucard
+                    </p>
+                    <p>
+                      Class: Warlock
+                    </p>
+                    <p>
+                      Level: 32
+                    </p>
+                    <p>
+                      Damege: 992
+                    </p>
+                    <p>
+                      Physical Defense: 5278
+                    </p>
+                    <p>
+                      Magic Defense: 4260
+                    </p>
+                    <p>
+                      Hp: 5985
+                    </p>
+                  </div>
+
+                  <div class="ms-3">
+                    <span class="h5">Sobre o personagem:</span>
+                    <p class="text-capitalize">Possuí helm e boots Mermen +10, staff spring lv30 +9 (Double pene), armor e gloves HP lv30 de SEA.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="pvp" class="tab-pane">
+
+              <div class=" d-flex flex-row-reverse">
+                <div class="w-50 d-flex flex-row text-start border-end">
+                  <img class="" src="../imgs/imgs-chars/alucard/alucardpvp.PNG" alt="" style="height:400px ;">
+                  <div class="d-column">
+                    <div class=" ms-3 text-start description fw-bold mt-1 border-bottom">
+                      <p>
+                        Nick: Alucard
+                      </p>
+                      <p>
+                        Class: Warlock
+                      </p>
+                      <p>
+                        Level: 32
+                      </p>
+                      <p>
+                        Damege: 886
+                      </p>
+                      <p>
+                        Physical Defense: 4049
+                      </p>
+                      <p>
+                        Magic Defense: 4218
+                      </p>
+                      <p>
+                        Hp: 7426
+                      </p>
+                    </div>
+                    <div class="ms-3">
+                      <span class="h5">Sobre o personagem:</span>
+                      <p class="text-capitalize">Possuí set completo Greatness lv30 +10 e acessórios Greatness lv28 +8/+9, Staff lv32 +8 de Stun (Halloween).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <button type="button" id="btnADC" class="btn btn-danger d-none mt-3">
+
+            Adicionar ao carrinho de compras
+
+          </button>
+
+        </div>
 
       </main>
 
@@ -118,6 +213,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
